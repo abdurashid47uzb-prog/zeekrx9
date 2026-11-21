@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ZEEKR 9X — premium avtomobil haqida batafsil ma'lumot, ranglar, texnologiyalar va 360 darajali ko'rinish.">
+    <title>ZEEKR 9X | Premium Experience</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="#home" class="logo">ZEEKR<span>9X</span></a>
+
+            <nav class="navbar" id="navbar">
+                <a href="#home">Bosh sahifa</a>
+                <a href="#colors">Ranglar</a>
+                <a href="#view360">360° View</a>
+                <a href="#interior">Salon</a>
+                <a href="#technology">Texnologiya</a>
+                <a href="#specifications">Xususiyatlar</a>
+                <a href="#contact" class="mobile-contact-btn">Bog‘lanish</a>
+            </nav>
+
+            <div class="header-right">
+                <button type="button" class="theme-toggle" id="themeToggle" aria-label="Rejimni almashtirish" title="Tungi / Kunduzgi rejim">
+                    <span class="icon-sun"><img src="./images/white.moon.jpg" alt=""></span>
+                    <span class="icon-moon"><img src="./images/dark.jpg" alt=""></span>
+                </button>
+
+                <select id="languageSelect" aria-label="Tilni tanlash">
+                    <option value="uz">UZ</option>
+                    <option value="ru">RU</option>
+                    <option value="en">EN</option>
+                </select>
+
+                <a href="#contact" class="header-button">Bog‘lanish</a>
+
+                <button class="menu-button" id="menuButton" aria-label="Menyuni ochish">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-background"></div>
+
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="eyebrow">THE NEW ERA OF LUXURY</span>
+                    <h1>ZEEKR <span>9X</span></h1>
+                    <p>
+                        Kelajak texnologiyasi, mukammal qulaylik
+                        va kuchli dizayn bir avtomobilda.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#colors" class="primary-button">Avtomobilni ko‘rish</a>
+                        <a href="#specifications" class="secondary-button">Batafsil ma’lumot</a>
+                    </div>
+                </div>
+
+                <div class="hero-car">
+                    <img src="./images/black.jpg" alt="ZEEKR 9X avtomobili">
+                </div>
+
+                <div class="hero-bottom">
+                    <div>
+                        <strong>9X</strong>
+                        <span>MODEL</span>
+                    </div>
+                    <div>
+                        <strong>LUXURY</strong>
+                        <span>DESIGN</span>
+                    </div>
+                    <div>
+                        <strong>FUTURE</strong>
+                        <span>TECHNOLOGY</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro section-padding">
+            <div class="container intro-content">
+                <div class="section-label">01 / INTRODUCTION</div>
+
+                <div class="intro-text">
+                    <h2>Yangi darajadagi <span>mukammallik</span></h2>
+                    <p>
+                        ZEEKR 9X — zamonaviy dizayn, ilg‘or texnologiyalar
+                        va yuqori darajadagi qulaylikni birlashtiruvchi
+                        premium avtomobil.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="colors section-padding" id="colors">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">YOUR STYLE</span>
+                    <h2>O‘zingizga mos <span>rangni tanlang</span></h2>
+                    <p>ZEEKR 9X tashqi ko‘rinishi uchun mavjud rang variantlari.</p>
+                </div>
+
+                <div class="color-car">
+                    <img src="./images/red.jpg" id="mainCarImage" alt="ZEEKR 9X Ruby Red">
+                </div>
+
+                <div class="color-info">
+                    <h3 id="colorName">Ruby Red</h3>
+                    <p id="colorDescription">O‘ziga xos va yorqin ko‘rinish.</p>
+                </div>
+
+                <div class="color-options">
+                    <button type="button" class="color-option active"
+                        data-image="./images/red.jpg"
+                        data-name="Ruby Red"
+                        data-description="O‘ziga xos va yorqin ko‘rinish."
+                        style="--car-color:#8f1724"
+                        aria-label="Qizil rang"></button>
+
+                    <button type="button" class="color-option"
+                        data-image="./images/white.jpg"
+                        data-name="Pearl White"
+                        data-description="Sodda va nafis dizayn."
+                        style="--car-color:#e8e8e8"
+                        aria-label="Oq rang"></button>
+
+                    <button type="button" class="color-option"
+                        data-image="./images/black.jpg"
+                        data-name="Midnight Black"
+                        data-description="Kuchli va jiddiy xarakter."
+                        style="--car-color:#17191d"
+                        aria-label="Qora rang"></button>
+
+                    <button type="button" class="color-option"
+                        data-image="./images/seriy.jpg"
+                        data-name="Silver Gray"
+                        data-description="Zamonaviy va universal uslub."
+                        style="--car-color:#777e85"
+                        aria-label="Kulrang rang"></button>
+
+                    <button type="button" class="color-option"
+                        data-image="./images/ochkulrang.jpg"
+                        data-name="Light Gray"
+                        data-description="Yengil va nafis ko‘rinish."
+                        style="--car-color:#b9bec4"
+                        aria-label="Och kulrang rang"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="view-360 section-padding" id="view360">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">INTERACTIVE EXPERIENCE</span>
+                    <h2>ZEEKR 9X <span>360° VIEW</span></h2>
+                    <p>Avtomobilni sichqoncha yoki barmog‘ingiz bilan aylantiring.</p>
+                </div>
+
+                <div class="car-360" id="car360">
+                    <img src="./images/ochkulrang.jpg" id="car360Image" alt="ZEEKR 9X 360 darajali ko‘rinishi" draggable="false">
+
+                    <div class="drag-info" id="dragInfo">
+                        Aylantirish uchun suring
+                    </div>
+
+                    <div class="rotation-controls">
+                        <button type="button" id="rotateLeft">OLDINGI</button>
+                        <span id="frameNumber">01 / 36</span>
+                        <button type="button" id="rotateRight">KEYINGI</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="interior section-padding" id="interior">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">INSIDE THE FUTURE</span>
+                    <h2>Har bir detalda <span>qulaylik</span></h2>
+                    <p>Yuqori darajadagi qulaylik va zamonaviy salon dizayni.</p>
+                </div>
+
+                <div class="interior-content">
+                    <div class="interior-image">
+                        <img src="./images/seriy.jpg" alt="ZEEKR 9X avtomobil saloni">
+                    </div>
+
+                    <div class="interior-text">
+                        <span class="eyebrow">PREMIUM INTERIOR</span>
+                        <h3>Sayohatning yangi hissi</h3>
+                        <p>
+                            Keng salon, zamonaviy materiallar va qulay
+                            joylashuv har bir safarni yanada yoqimli qiladi.
+                        </p>
+
+                        <ul>
+                            <li>Premium salon dizayni</li>
+                            <li>Qulay o‘rindiqlar</li>
+                            <li>Zamonaviy multimedia</li>
+                            <li>Keng ichki makon</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="technology section-padding" id="technology">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">SMART TECHNOLOGY</span>
+                    <h2>Kelajak <span>texnologiyalari</span></h2>
+                    <p>Har bir safar uchun aqlli yechimlar.</p>
+                </div>
+
+                <div class="technology-image">
+                    <img src="./images/white.jpg" alt="ZEEKR 9X texnologiyalari">
+                </div>
+
+                <div class="technology-grid">
+                    <div class="technology-card">
+                        <span>01</span>
+                        <h3>Smart System</h3>
+                        <p>Zamonaviy raqamli boshqaruv tizimlari.</p>
+                    </div>
+
+                    <div class="technology-card">
+                        <span>02</span>
+                        <h3>Driver Assistance</h3>
+                        <p>Haydovchiga yordam beruvchi texnologiyalar.</p>
+                    </div>
+
+                    <div class="technology-card">
+                        <span>03</span>
+                        <h3>Entertainment</h3>
+                        <p>Multimedia va raqamli ko‘ngilochar tizimlar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="specifications section-padding" id="specifications">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">TECHNICAL DETAILS</span>
+                    <h2>Texnik <span>xususiyatlar</span></h2>
+                    <p>Model va komplektatsiyaga qarab farq qilishi mumkin.</p>
+                </div>
+
+                <div class="specifications-grid">
+                    <div class="specification-item">
+                        <span>MODEL</span>
+                        <h3>ZEEKR 9X</h3>
+                    </div>
+
+                    <div class="specification-item">
+                        <span>BODY TYPE</span>
+                        <h3>Luxury SUV</h3>
+                    </div>
+
+                    <div class="specification-item">
+                        <span>SEATING</span>
+                        <h3>6 Seats</h3>
+                    </div>
+
+                    <div class="specification-item">
+                        <span>DRIVE</span>
+                        <h3>AWD</h3>
+                    </div>
+
+                    <div class="specification-item">
+                        <span>POWERTRAIN</span>
+                        <h3>Hybrid</h3>
+                    </div>
+
+                    <div class="specification-item">
+                        <span>CLASS</span>
+                        <h3>Premium</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery section-padding" id="gallery">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">VISUAL EXPERIENCE</span>
+                    <h2>ZEEKR 9X <span>Gallery</span></h2>
+                </div>
+
+                <div class="gallery-grid">
+                    <img src="./images/white.jpg" alt="ZEEKR 9X tashqi ko‘rinishi">
+                    <img src="./images/salon.jpg" alt="ZEEKR 9X saloni">
+                    <img src="./images/images.jpg" alt="ZEEKR 9X texnologiyasi">
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section-padding" id="contact">
+            <div class="container contact-content">
+                <div class="contact-text">
+                    <span class="eyebrow">GET IN TOUCH</span>
+                    <h2>ZEEKR 9X haqida <span>ko‘proq bilib oling</span></h2>
+                    <p>Ma’lumot olish uchun so‘rovingizni qoldiring.</p>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <input type="text" id="fullName" placeholder="Ism va familiya" required>
+                    <input type="tel" id="phoneNumber" placeholder="Telefon raqami" required>
+                    <textarea id="message" placeholder="Xabaringiz"></textarea>
+                    <button type="submit">So‘rov yuborish</button>
+                    <p id="formMessage"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#home" class="logo">ZEEKR<span>9X</span></a>
+            <p>© 2026 ZEEKR 9X Showcase. Norasmiy taqdimot sayti.</p>
+            <a href="#home">Yuqoriga qaytish ↑</a>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
