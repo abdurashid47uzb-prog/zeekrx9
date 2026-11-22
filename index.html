@@ -38,7 +38,7 @@
 
                 <a href="#contact" class="header-button">Bog‘lanish</a>
 
-                <button class="menu-button" id="menuButton" aria-label="Menyuni ochish">
+                <button type="button" class="menu-button" id="menuButton" aria-label="Menyuni ochish" aria-controls="navbar" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -111,7 +111,7 @@
                 </div>
 
                 <div class="color-car">
-                    <img src="./images/red.jpg" id="mainCarImage" alt="ZEEKR 9X Ruby Red">
+                    <img src="./images/red.jpg" id="mainCarImage" alt="ZEEKR 9X Ruby Red" loading="lazy">
                 </div>
 
                 <div class="color-info">
@@ -192,7 +192,7 @@
 
                 <div class="interior-content">
                     <div class="interior-image">
-                        <img src="./images/seriy.jpg" alt="ZEEKR 9X avtomobil saloni">
+                        <img src="./images/seriy.jpg" alt="ZEEKR 9X avtomobil saloni" loading="lazy">
                     </div>
 
                     <div class="interior-text">
@@ -223,7 +223,7 @@
                 </div>
 
                 <div class="technology-image">
-                    <img src="./images/white.jpg" alt="ZEEKR 9X texnologiyalari">
+                    <img src="./images/white.jpg" alt="ZEEKR 9X texnologiyalari" loading="lazy">
                 </div>
 
                 <div class="technology-grid">
@@ -298,9 +298,9 @@
                 </div>
 
                 <div class="gallery-grid">
-                    <img src="./images/white.jpg" alt="ZEEKR 9X tashqi ko‘rinishi">
-                    <img src="./images/salon.jpg" alt="ZEEKR 9X saloni">
-                    <img src="./images/images.jpg" alt="ZEEKR 9X texnologiyasi">
+                    <img src="./images/white.jpg" alt="ZEEKR 9X tashqi ko‘rinishi" loading="lazy">
+                    <img src="./images/salon.jpg" alt="ZEEKR 9X saloni" loading="lazy">
+                    <img src="./images/images.jpg" alt="ZEEKR 9X texnologiyasi" loading="lazy">
                 </div>
             </div>
         </section>
@@ -313,12 +313,12 @@
                     <p>Ma’lumot olish uchun so‘rovingizni qoldiring.</p>
                 </div>
 
-                <form class="contact-form" id="contactForm">
-                    <input type="text" id="fullName" placeholder="Ism va familiya" required>
-                    <input type="tel" id="phoneNumber" placeholder="Telefon raqami" required>
+                <form class="contact-form" id="contactForm" novalidate>
+                    <input type="text" id="fullName" placeholder="Ism va familiya" autocomplete="name" required>
+                    <input type="tel" id="phoneNumber" placeholder="Telefon raqami" autocomplete="tel" required>
                     <textarea id="message" placeholder="Xabaringiz"></textarea>
                     <button type="submit">So‘rov yuborish</button>
-                    <p id="formMessage"></p>
+                    <p id="formMessage" role="status" aria-live="polite"></p>
                 </form>
             </div>
         </section>
